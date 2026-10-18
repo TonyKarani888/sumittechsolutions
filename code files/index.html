@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081725">
+  <meta name="description" content="Help customers discover your local business, explore what you offer, and find a reason to visit.">
+  <title>sumittechsolutions™ — Make your business easier to discover</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main id="main-content">
+    <section class="home-screen" id="home" aria-label="Homepage">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="sumittechsolutions home">
+          <!-- Replace logo-placeholder.svg with your logo file when ready. -->
+          <span class="brand__image-wrap">
+            <img class="brand__image" src="../images/the-logo.png" alt="" width="42" height="42">
+          </span>
+          <span class="brand__name">sumittechsolutions<sup>™</sup></span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a class="site-nav__link is-current" href="#home">Home</a>
+          <a class="site-nav__link" href="#get-found">Get discovered</a>
+          <a class="site-nav__link" href="#showcase">Showcase</a>
+          <a class="site-nav__link" href="#local-search">Local search</a>
+          <a class="site-nav__link" href="#grow-reach">Grow your reach</a>
+        </nav>
+      </header>
+
+      <section class="hero-carousel" id="hero-carousel" aria-label="What an online business listing can do">
+        <div class="hero-copy">
+          <div class="hero-meta">
+            <span class="slide-counter"><span id="current-slide">01</span><span class="slide-counter__divider">/</span>04</span>
+          </div>
+
+          <div class="hero-slides" id="hero-slides" aria-live="polite">
+            <article class="hero-slide is-active" data-slide="0" aria-label="Slide 1 of 4">
+              <p class="slide-kicker">Be there when customers look</p>
+              <h1>Your next customer could be looking for you right now.<span class="headline-accent"> Make sure they can find you.</span></h1>
+              <p class="hero-description">Customers are searching for products, services, and better offers. Put your business where they can discover it.</p>
+              <a class="button button--amber" href="#get-found">Get Your Business Online <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+
+            <article class="hero-slide" data-slide="1" aria-label="Slide 2 of 4" hidden>
+              <p class="slide-kicker">Show what makes you worth a visit</p>
+              <h2>Let customers discover what you have to offer.</h2>
+              <p class="hero-description">Showcase your products, services, prices, and promotions online, giving potential customers a convenient way to explore your business from anywhere.</p>
+              <a class="button button--amber" href="#showcase">Showcase Your Business <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+
+            <article class="hero-slide" data-slide="2" aria-label="Slide 3 of 4" hidden>
+              <p class="slide-kicker">Be part of the search</p>
+              <h2>Turn local searches into new customers.</h2>
+              <p class="hero-description">When people search online for products you sell, don't let established retailers be their only options. Give your business a chance to be discovered, too.</p>
+              <a class="button button--amber" href="#local-search">Reach More Customers <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+
+            <article class="hero-slide" data-slide="3" aria-label="Slide 4 of 4" hidden>
+              <p class="slide-kicker">Build a wider path to your door</p>
+              <h2>Your business deserves to be seen.</h2>
+              <p class="hero-subheading">Let customers discover you before they walk through your door.</p>
+              <p class="hero-description">Go beyond word of mouth and walk-in traffic. Build an online presence that helps more people learn about your business and what makes it worth visiting.</p>
+              <a class="button button--amber" href="#grow-reach">Let's Grow Your Reach <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+          </div>
+
+          <div class="carousel-controls" aria-label="Slideshow controls">
+            <button class="carousel-arrow" id="slide-previous" type="button" aria-label="Previous message">
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <div class="carousel-dots" aria-label="Choose a message">
+              <button class="carousel-dot is-active" type="button" data-slide-to="0" aria-label="Show message 1" aria-current="true"></button>
+              <button class="carousel-dot" type="button" data-slide-to="1" aria-label="Show message 2"></button>
+              <button class="carousel-dot" type="button" data-slide-to="2" aria-label="Show message 3"></button>
+              <button class="carousel-dot" type="button" data-slide-to="3" aria-label="Show message 4"></button>
+            </div>
+            <button class="carousel-arrow" id="slide-next" type="button" aria-label="Next message">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+            <span class="controls-spacer"></span>
+            <button class="carousel-pause" id="slide-pause" type="button" aria-label="Pause automatic slide rotation">
+              <i class="fa-solid fa-pause" aria-hidden="true"></i><span>Pause</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero-visual" aria-hidden="true">
+          <div class="visual-topline"><span>THE LOCAL ADVANTAGE</span><span>01 — 04</span></div>
+          <div class="visual-orbit visual-orbit--outer"></div>
+          <div class="visual-orbit visual-orbit--inner"></div>
+          <div class="visual-cross visual-cross--one"></div>
+          <div class="visual-cross visual-cross--two"></div>
+          <div class="listing-preview">
+            <div class="listing-preview__top">
+              <span class="mini-mark"><i class="fa-solid fa-location-dot"></i></span>
+              <span class="mini-label">LOCAL BUSINESS LISTING</span>
+              <i class="fa-solid fa-ellipsis" aria-hidden="true"></i>
+            </div>
+            <div class="listing-search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span>Find products, services, offers...</span></div>
+            <div class="listing-result">
+              <div class="listing-result__symbol"><i class="fa-solid fa-store" aria-hidden="true"></i></div>
+              <div class="listing-result__copy"><strong>Your business</strong><span>Products · Services · Offers</span></div>
+              <span class="listing-result__status"><i class="fa-solid fa-check" aria-hidden="true"></i> DISCOVERABLE</span>
+            </div>
+            <div class="listing-preview__bottom"><span>YOUR PLACE IN THE LOCAL PICTURE</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
+          </div>
+          <div class="visual-note visual-note--top"><span class="visual-note__dot"></span> Be easier to find</div>
+          <div class="visual-note visual-note--bottom"><span class="visual-note__number">02</span><span>Show them what you offer</span></div>
+          <div class="visual-stamp">LOCAL<br>MATTERS<span>↗</span></div>
+        </aside>
+      </section>
+      <a class="scroll-cue" href="#get-found"><span>Explore the idea</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+    </section>
+
+    <section class="story-section section-find" id="get-found" aria-labelledby="find-title">
+      <div class="section-index"><span>01</span><span class="index-rule"></span><span>BE DISCOVERED</span></div>
+      <div class="section-layout">
+        <div class="section-copy">
+          <p class="eyebrow eyebrow--dark">Visibility starts with discovery</p>
+          <h2 id="find-title">A great business should be <em>easy to find.</em></h2>
+          <p class="section-lead">People can't consider a business they don't know about. An online listing gives your business another way to reach potential customers—especially people who may never pass your door.</p>
+          <p>Put the essentials in one useful place: your business name, what you offer, and the details customers need to take the next step. Make the first discovery easier, whether they're planning a visit or comparing options from home.</p>
+          <div class="text-link-row"><span class="text-link-row__mark"></span><span>Help people move from searching to considering your business.</span></div>
+          <div class="section-action">
+            <button class="button button--navy book-call-button" type="button" aria-expanded="false" aria-controls="contact-panel-found">Book a call <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            <div class="contact-reveal" id="contact-panel-found" hidden>
+              <p class="contact-reveal__title">Choose how to reach us</p>
+              <a href="mailto:sumittechsolutions@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> sumittechsolutions@gmail.com</a>
+              <!-- Replace the phone placeholder with your real business phone number. -->
+              <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <span>+254 784242117</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="section-visual section-visual--find" aria-hidden="true">
+          <div class="visual-caption">A CLEAR FIRST IMPRESSION</div>
+          <div class="find-poster">
+            <span class="poster-overline">YOUR BUSINESS, IN VIEW</span>
+            <div class="poster-graphic"><span class="poster-pin"><i class="fa-solid fa-location-dot"></i></span><span class="poster-ring poster-ring--one"></span><span class="poster-ring poster-ring--two"></span></div>
+            <div class="poster-line poster-line--long"></div><div class="poster-line poster-line--short"></div>
+            <div class="poster-footer"><span>LOCAL DISCOVERY</span><span>01 / 04</span></div>
+          </div>
+          <p class="visual-side-note">Be present<br>when it matters.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section section-showcase" id="showcase" aria-labelledby="showcase-title">
+      <div class="section-index section-index--light"><span>02</span><span class="index-rule"></span><span>SHOW WHAT YOU OFFER</span></div>
+      <div class="section-layout section-layout--reverse">
+        <div class="section-copy section-copy--light">
+          <p class="eyebrow">Give customers a clearer picture</p>
+          <h2 id="showcase-title">Let your offer do the <em>talking.</em></h2>
+          <p class="section-lead">Customers want to know what a business has before they decide where to go. Show them useful details upfront and make exploring your offer more convenient.</p>
+          <div class="offer-list">
+            <div class="offer-row"><span class="offer-row__number">01</span><div><h3>Products and services</h3><p>Make it clear what customers can come to you for.</p></div><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
+            <div class="offer-row"><span class="offer-row__number">02</span><div><h3>Prices and useful details</h3><p>Help people compare options before setting out.</p></div><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
+            <div class="offer-row"><span class="offer-row__number">03</span><div><h3>Promotions and offers</h3><p>Bring attention to what makes a visit worthwhile.</p></div><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
+          </div>
+          <div class="section-action">
+            <button class="button button--amber book-call-button" type="button" aria-expanded="false" aria-controls="contact-panel-showcase">Book a call <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            <div class="contact-reveal contact-reveal--dark" id="contact-panel-showcase" hidden>
+              <p class="contact-reveal__title">Choose how to reach us</p>
+              <a href="mailto:sumittechsolutions@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> sumittechsolutions@gmail.com</a>
+              <!-- Replace the phone placeholder with your real business phone number. -->
+              <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <span>+254 784242117</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="section-visual section-visual--showcase" aria-hidden="true">
+          <div class="showcase-heading"><span>WHAT CUSTOMERS CAN EXPLORE</span><span>↗</span></div>
+          <div class="showcase-board">
+            <div class="showcase-board__label">BUSINESS SNAPSHOT</div>
+            <div class="showcase-feature"><div class="showcase-feature__icon"><i class="fa-solid fa-box-open"></i></div><div><strong>Products</strong><span>What you have in store</span></div><span class="showcase-feature__arrow">↗</span></div>
+            <div class="showcase-feature"><div class="showcase-feature__icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><div><strong>Services</strong><span>What you can do for them</span></div><span class="showcase-feature__arrow">↗</span></div>
+            <div class="showcase-feature showcase-feature--accent"><div class="showcase-feature__icon"><i class="fa-solid fa-tag"></i></div><div><strong>Current offers</strong><span>What makes today a good day to visit</span></div><span class="showcase-feature__arrow">↗</span></div>
+            <div class="showcase-board__foot"><span>DETAILS THAT HELP PEOPLE DECIDE</span><span class="foot-spark">✳</span></div>
+          </div>
+          <p class="showcase-side-note">Clarity builds<br>confidence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section section-search" id="local-search" aria-labelledby="search-title">
+      <div class="section-index"><span>03</span><span class="index-rule"></span><span>LOCAL SEARCH</span></div>
+      <div class="section-layout">
+        <div class="section-copy">
+          <p class="eyebrow eyebrow--dark">Make room for local choice</p>
+          <h2 id="search-title">When customers search, give your business a chance to be <em>in the picture.</em></h2>
+          <p class="section-lead">When people search online for products you sell, don't let established retailers be their only options. Give your business a chance to be discovered, too.</p>
+          <p>The goal isn't to compete on size. It's to make your offer visible and understandable, so a customer can discover a local option they may not have known about.</p>
+          <div class="search-steps">
+            <div><span>01</span><strong>They search</strong><p>A product, service, or better offer.</p></div>
+            <div><span>02</span><strong>They discover</strong><p>Your business and what you provide.</p></div>
+            <div><span>03</span><strong>They decide</strong><p>Whether to contact you or visit.</p></div>
+          </div>
+          <p class="fine-print">A listing improves your online presence; search placement and customer results are not guaranteed.</p>
+          <div class="section-action">
+            <button class="button button--navy book-call-button" type="button" aria-expanded="false" aria-controls="contact-panel-search">Book a call <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            <div class="contact-reveal" id="contact-panel-search" hidden>
+              <p class="contact-reveal__title">Choose how to reach us</p>
+              <a href="mailto:sumittechsolutions@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> sumittechsolutions@gmail.com</a>
+              <!-- Replace the phone placeholder with your real business phone number. -->
+              <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <span>+254 784242117</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="section-visual section-visual--search" aria-hidden="true">
+          <div class="search-sheet">
+            <div class="search-sheet__top"><span class="search-sheet__dots"><i></i><i></i><i></i></span><span>DISCOVERY STARTS HERE</span></div>
+            <div class="search-sheet__query"><i class="fa-solid fa-magnifying-glass"></i><span>what I need, near me</span><span class="query-cursor"></span></div>
+            <div class="search-sheet__line search-sheet__line--wide"></div>
+            <div class="search-sheet__result"><span class="result-symbol"><i class="fa-solid fa-store"></i></span><div><strong>A local business</strong><span>A nearby option worth exploring</span><small>PRODUCTS · SERVICES · OFFERS</small></div><i class="fa-solid fa-arrow-up-right-from-square result-arrow"></i></div>
+            <div class="search-sheet__line search-sheet__line--medium"></div>
+            <div class="search-sheet__line search-sheet__line--short"></div>
+          </div>
+          <div class="search-callout"><span>LOCAL</span><strong>belongs<br>in the mix.</strong><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section section-grow" id="grow-reach" aria-labelledby="grow-title">
+      <div class="section-index"><span>04</span><span class="index-rule"></span><span>GROW YOUR REACH</span></div>
+      <div class="grow-banner">
+        <div class="grow-banner__copy">
+          <p class="eyebrow eyebrow--dark">Beyond the familiar</p>
+          <h2 id="grow-title">Your business deserves to be <em>seen.</em></h2>
+          <p class="grow-banner__standfirst">Let customers discover you before they walk through your door.</p>
+          <p>Go beyond word of mouth and walk-in traffic. Build an online presence that helps more people learn about your business and what makes it worth visiting.</p>
+          <p class="pricing-note"><i class="fa-solid fa-comments" aria-hidden="true"></i><span><strong>Let's talk about what fits.</strong> Listing details and pricing are discussed directly, so we can understand your business before agreeing on the right approach.</span></p>
+          <div class="section-action">
+            <button class="button button--navy book-call-button" type="button" aria-expanded="false" aria-controls="contact-panel-grow">Book a call <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            <div class="contact-reveal" id="contact-panel-grow" hidden>
+              <p class="contact-reveal__title">Choose how to reach us</p>
+              <a href="mailto:sumittechsolutions@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> sumittechsolutions@gmail.com</a>
+              <!-- Replace the phone placeholder with your real business phone number. -->
+              <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <span>+254 784242117</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="grow-banner__visual" aria-hidden="true">
+          <div class="reach-mark"><span class="reach-mark__ring reach-mark__ring--one"></span><span class="reach-mark__ring reach-mark__ring--two"></span><span class="reach-mark__core"><i class="fa-solid fa-arrow-up-right-from-square"></i></span><span class="reach-mark__axis reach-mark__axis--h"></span><span class="reach-mark__axis reach-mark__axis--v"></span></div>
+          <div class="reach-caption"><span>FROM LOCAL KNOW-HOW</span><i class="fa-solid fa-arrow-right"></i><span>TO NEW DISCOVERY</span></div>
+          <div class="reach-coordinate">KENYA · LOCAL BUSINESS · NEXT STEP</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-note" aria-label="Get started">
+      <p class="eyebrow">Your business has something to offer</p>
+      <h2>Let's help more people find out about it.</h2>
+      <a href="mailto:sumittechsolutions@gmail.com" class="closing-link">Start a conversation <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-email" href="mailto:sumittechsolutions@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>sumittechsolutions@gmail.com</span></a>
+    <p class="copyright">&copy; <span id="copyright-year">2026</span> sumittechsolutions<sup>™</sup>. All rights reserved.</p>
+    <a class="back-to-top" href="#home">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+  </footer>
+</body>
+</html>
